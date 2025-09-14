@@ -18,13 +18,11 @@ import {
 import { VenusAndMarsIcon } from "lucide-react";
 import { NavDocuments } from "./nav-documents";
 import { SIDEBAR_PAGES, siteConfig } from "@/config/site-config";
+import { IconReceiptDollar } from "@tabler/icons-react";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar
-      collapsible="icon"
-      {...props}
-    >
+    <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
@@ -33,7 +31,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="#">
-                <VenusAndMarsIcon className="!size-5" />
+                <IconReceiptDollar className="!size-5" />
                 <span className="text-base font-semibold">
                   {siteConfig.name}
                 </span>

@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { IconGenderBigender } from "@tabler/icons-react";
+import { IconReceiptDollar } from "@tabler/icons-react";
 import {
   Form,
   FormControl,
@@ -36,10 +36,7 @@ export function LoginForm({
   };
 
   return (
-    <div
-      className={cn("flex flex-col gap-6", className)}
-      {...props}
-    >
+    <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           <div className="flex flex-col gap-6">
@@ -49,7 +46,7 @@ export function LoginForm({
                 className="flex flex-col items-center gap-2 font-medium"
               >
                 <div className="flex size-9 bg-muted items-center justify-center rounded-full">
-                  <IconGenderBigender className="size-6" />
+                  <IconReceiptDollar className="size-6" />
                 </div>
                 <span className="sr-only">Acme Inc.</span>
               </a>
@@ -98,10 +95,7 @@ export function LoginForm({
                 )}
               />
 
-              <Button
-                type="submit"
-                className="w-full"
-              >
+              <Button type="submit" className="w-full">
                 Acessar
               </Button>
             </div>

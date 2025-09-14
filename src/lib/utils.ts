@@ -1,3 +1,4 @@
+import { format } from "winston";
 import { twMerge } from "tailwind-merge";
 import { clsx, type ClassValue } from "clsx";
 
@@ -133,3 +134,10 @@ export const ONLY_AUTH_ROUTES: string[] = [
   "/tracking",
   "/analises",
 ];
+
+export function formatCurrency(value: number) {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}

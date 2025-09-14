@@ -20,9 +20,9 @@ import {
 
 export const siteConfig = {
   developer: "A&A Soluções",
-  title: "Corpus Motel | A&A Soluções",
-  name: "Corpus Motel",
-  description: "Sistema Corpus",
+  title: "Contas a pagar | A&A Soluções",
+  name: "Contas a pagar",
+  description: "Sistema para controle de contas a pagar.",
   url: "https://www.corpusmotel.com.br",
   ogImage: "https://www.corpusmotel.com.br/og-image.jpg",
   links: {
@@ -40,7 +40,7 @@ export const SIDEBAR_PAGES = {
   },
   navMain: [
     {
-      title: "Painel Administrativo",
+      title: "Dashboard",
       disabled: false,
       url: "/dashboard",
       icon: IconChartPieFilled,
